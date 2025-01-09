@@ -2,10 +2,20 @@
     "name": "@qstate/core",
     "type": "module",
     "version": "0.0.1",
-    "main": "index.js",
+    "exports": {
+        ".": {
+            "default": "./src/index.ts",
+            "types": "./dist/index.ts"
+        }
+    },
     "scripts": {
         "dev": "tsc --watch",
         "build": "tsc"
+    },
+    "devDependencies": {
+        "@qstate/typescript-config": "workspace:*",
+        "@qstate/eslint-config": "workspace:*",
+        "typescript": "latest"
     },
     "keywords": [],
     "author": "",

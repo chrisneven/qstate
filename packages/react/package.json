@@ -1,20 +1,24 @@
 {
-    "name": "web",
-    "version": "0.1.0",
+    "name": "@qstate/react",
     "type": "module",
-    "private": true,
-    "scripts": {
-        "dev": "next dev --turbopack",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint --max-warnings 0",
-        "check-types": "tsc --noEmit"
+    "version": "0.0.1",
+    "exports": {
+        ".": {
+            "default": "./src/index.ts",
+            "types": "./dist/index.ts"
+        }
     },
+    "scripts": {
+        "dev": "tsc --watch",
+        "build": "tsc"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
     "dependencies": {
-        "next": "^15.1.0",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
-        "@qstate/react": "workspace:*"
+        "@qstate/core": "workspace:*"
     },
     "devDependencies": {
         "@qstate/eslint-config": "workspace:*",
