@@ -1,0 +1,13 @@
+{
+    "name": "@qstate/core",
+    "type": "module",
+    "version": "0.0.1",
+    "main": "index.js",
+    "scripts": {
+        "dev": "tsc --watch",
+        "build": "tsc"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
