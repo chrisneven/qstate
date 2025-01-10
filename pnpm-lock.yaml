@@ -20,6 +20,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@qstate/core':
+        specifier: workspace:*
+        version: link:../../packages/core
       '@qstate/react':
         specifier: workspace:*
         version: link:../../packages/react

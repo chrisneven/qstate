@@ -1,84 +1,34 @@
-# Turborepo starter
+# QState Monorepository
 
-This is an official starter Turborepo.
+QState is a monorepository containing packages for managing query parameters in web and React applications. It provides utilities and hooks to decode, encode, and manage query parameters in a type-safe manner.
 
-## Using this example
+## Packages
 
-Run the following command:
+### Core
 
-```sh
-npx create-turbo@latest
-```
+The core package provides the fundamental utilities for managing query parameters. It includes functions to create getters and setters for query parameters, as well as utilities for subscribing to query parameter changes.
 
-## What's inside?
+- **Package Name**: `@qstate/core`
+- **Description**: Utilities for managing query parameters in a web application.
+- **Installation**: `npm install @qstate/core` or `yarn add @qstate/core`
 
-This Turborepo includes the following packages/apps:
+### React
 
-### Apps and Packages
+The react package builds on top of the core package and provides custom hooks for managing query parameters in React applications. It includes hooks for managing single and multiple query parameters, as well as utilities for subscribing to query parameter changes.
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@qstate/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@qstate/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@qstate/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- **Package Name**: `@qstate/react`
+- **Description**: Custom hooks for managing query parameters in React applications.
+- **Installation**: `npm install @qstate/react` or `yarn add @qstate/react`
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## Getting Started
 
-### Utilities
+To get started with QState, install the necessary packages and follow the usage instructions provided in the respective package README files.
 
-This Turborepo has some additional tools already setup for you:
+## TODO
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- [ ] Add Svelte integration
+- [ ] Add Vue integration
 
-### Build
+## License
 
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+This project is licensed under the MIT License.
