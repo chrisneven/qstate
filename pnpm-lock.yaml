@@ -66,6 +66,9 @@ importers:
       '@qstate/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
+      tsup:
+        specifier: ^8.3.5
+        version: 8.3.5(postcss@8.4.31)(typescript@5.7.3)
       typescript:
         specifier: latest
         version: 5.7.3
