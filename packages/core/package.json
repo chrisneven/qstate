@@ -18,7 +18,8 @@
     "devDependencies": {
         "@qstate/typescript-config": "workspace:*",
         "@qstate/eslint-config": "workspace:*",
-        "typescript": "latest"
+        "typescript": "latest",
+        "tsup": "^8.3.5"
     },
     "keywords": [],
     "author": "",
