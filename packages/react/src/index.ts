@@ -42,7 +42,7 @@ export function useQueryParam<T>(name: string, config: QueryParamSetting<T>) {
  * @param config - The configuration object that defines the query parameters and their settings.
  * @returns A tuple containing the parsed values of the query parameters and a setter function to update the query parameters.
  */
-export default function useQueryParams<
+export function useQueryParams<
     Config extends Record<string, QueryParamSetting<any>>,
 >(config: Config) {
     const [isReady, setIsReady] = useState(false);
