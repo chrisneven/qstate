@@ -1,5 +1,13 @@
 # web
 
+## 0.1.2
+
+### Patch Changes
+
+- Updated dependencies [e7c1744]
+  - @qstate/react@0.0.3
+  - @qstate/core@0.0.3
+
 ## 0.1.1
 
 ### Patch Changes

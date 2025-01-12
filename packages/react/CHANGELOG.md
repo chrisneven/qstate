@@ -1,5 +1,13 @@
 # @qstate/react
 
+## 0.0.3
+
+### Patch Changes
+
+- e7c1744: update query input imports and enhance default value handling
+- Updated dependencies [e7c1744]
+  - @qstate/core@0.0.3
+
 ## 0.0.2
 
 ### Patch Changes
