@@ -1,7 +1,7 @@
 "use client";
 
 import { booleanSettings, numberSettings, stringSettings } from "@qstate/core";
-import useQueryParams, { useQueryParam } from "@qstate/react";
+import { useQueryParam, useQueryParams } from "@qstate/react";
 
 export function QueryInput() {
     const [query, setQuery] = useQueryParam("query", {

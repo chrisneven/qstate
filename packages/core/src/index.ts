@@ -18,7 +18,8 @@ export function createGetter<
             const value = urlSearchParams.getAll(usedName);
             return [
                 name,
-                value.length ? setting.decoder(value) : setting.defaultValue,
+                (!!value.length && setting.decoder(value)) ||
+                    setting.defaultValue,
             ];
         })
     );
