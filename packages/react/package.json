@@ -1,16 +1,10 @@
 {
     "name": "@qstate/react",
     "type": "module",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
-    "exports": {
-        ".": {
-            "types": "./dist/index.ts",
-            "default": "./src/index.ts"
-        }
-    },
     "scripts": {
         "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
         "build": "tsup src/index.ts --format cjs,esm --dts"
